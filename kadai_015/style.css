@@ -1,0 +1,40 @@
+/* --- 全体・フォントの設定 --- */
+html {
+/* ルート要素のフォントサイズを20pxに設定 */
+font-size: 20px;
+}
+
+body {
+font-family: "Arial", "Meiryo", sans-serif;
+/* テキストを全て中央寄せにする */
+text-align: center;
+}
+
+/* --- h1の装飾 --- */
+h1 {
+/* Googleフォントを適用 */
+font-family: 'Josefin Sans', sans-serif;
+/* ルート要素(20px)の2倍 = 40px */
+font-size: 2rem;
+/* 文字間を文字サイズの1.2倍に設定 */
+letter-spacing: 1.2em;
+/* 影を付ける（右下方向に3px、ぼかし3px、色はグレーの例） */
+text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+/* 下線: 3pxの実線、指定のカラー */
+border-bottom: 3px solid rgb(115, 115, 114);
+}
+
+/* --- カラーの設定（クラスを使用） --- */
+.sky-blue, .blue {
+color: skyblue;
+}
+
+.pink {
+color: rgb(255, 192, 203);
+}
+
+/* --- 子孫要素の考え方を利用した太字設定 --- */
+/* id="basic" の中にある p要素だけを太字にする */
+#basic p {
+font-weight: bold;
+}
